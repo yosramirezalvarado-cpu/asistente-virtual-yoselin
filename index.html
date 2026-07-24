@@ -6,7 +6,7 @@
 <title>Yóselin Ramírez | Asistente Virtual Administrativa</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--azul:#0A66C2;--negro:#111;--blanco:#fff;--gris:#f5f7fa;}
+:root{--azul:#1F4E79;--negro:#111;--blanco:#fff;--gris:#f5f7fa;}
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
 body{color:var(--negro);line-height:1.6}
 header{position:sticky;top:0;background:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.08);z-index:1000}
@@ -52,7 +52,8 @@ opacity:.9;
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
 .card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 18px rgba(0,0,0,.08)}
 .gray{background:var(--gris)}
-.plan-pro{border:3px solid var(--azul)}
+.plan-pro{border:3px solid var(--azul);transform:scale(1.03);}
+.plan-pro:hover{box-shadow:0 10px 25px rgba(0,0,0,.15);}
 .price{font-size:2rem;color:var(--azul);font-weight:700}
 .center{text-align:center}
 .center-text{
@@ -60,6 +61,14 @@ max-width:800px;
 margin:0 auto 40px;
 text-align:center;
 color:#555;
+}
+.trust{
+margin-top:20px;
+font-size:.9rem;
+color:#555;
+}
+.trust p{
+margin-bottom:5px;
 }
 footer{background:#111;color:#fff;text-align:center;padding:25px}
 .contact{background:var(--azul);color:white;text-align:center}
@@ -283,6 +292,10 @@ Procesos administrativos sin estructura que generan pérdida de tiempo y retraba
 </section>
 <section class="section" id="planes">
 <h2>Planes de asistencia virtual</h2>
+
+<p class="center-text">
+Elija el nivel de apoyo administrativo que mejor se adapte al volumen y necesidades de su consulta.
+</p>
 
 <div class="cards">
 
