@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yóselin Ramírez | Asistente Virtual Administrativa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--azul:#0A66C2;
+--negro:#111111;
+--blanco:#FFFFFF;
+--gris:#F5F7FA;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:white;
+color:var(--negro);
+line-height:1.6;
+}
+
+header{
+position:sticky;
+top:0;
+background:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:1.3rem;
+font-weight:700;
+color:var(--azul);
+}
+
+.menu a{
+text-decoration:none;
+margin-left:25px;
+color:var(--negro);
+font-weight:500;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+padding:0 8%;
+background:linear-gradient(to right,#ffffff,#f5f9ff);
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:3rem;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero span{
+color:var(--azul);
+}
+
+.hero p{
+font-size:1.1rem;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:var(--azul);
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.titulo{
+text-align:center;
+margin-bottom:50px;
+}
+
+.titulo h2{
+font-size:2.2rem;
+color:var(--azul);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.problemas{
+background:var(--gris);
+}
+
+.problemas ul{
+max-width:800px;
+margin:auto;
+font-size:1.1rem;
+}
+
+.problemas li{
+margin-bottom:15px;
+}
+
+.planes{
+background:white;
+}
+
+.plan{
+border:2px solid #eee;
+}
+
+.plan-destacado{
+border:3px solid var(--azul);
+}
+
+.precio{
+font-size:2rem;
+font-weight:700;
+color:var(--azul);
+margin:15px 0;
+}
+
+.sobre{
+background:var(--gris);
+}
+
+.contacto{
+background:var(--azul);
+color:white;
+text-align:center;
+}
+
+.contacto h2{
+margin-bottom:20px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+}
+
+@media(max-width:768px){
+
+.menu{
+display:none;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Yóselin Ramírez
+</div>
+
+<nav class="menu">
+<a href="#servicios">Servicios</a>
+<a href="#planes">Planes</a>
+<a href="#sobre">Sobre mí</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Recupere tiempo para sus pacientes.
+<span>Yo me encargo de la gestión administrativa.</span>
+</h1>
+
+<p>
+Asistencia virtual administrativa especializada para profesionales de la salud. Optimice sus procesos, mejore el seguimiento de pacientes y reduzca su carga operativa.
+</p>
+
+<a href="https://wa.me/50663559877" class="btn">
+Solicitar información
+</a>
+
+</div>
+
+</section>
+
+<section class="section" id="servicios">
+
+<div class="titulo">
+<h2>Servicios</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Gestión de Comunicación</h3>
+<p>Atención de mensajes, consultas administrativas y seguimiento.</p>
+</div>
+
+<div class="card">
+<h3>Organización Administrativa</h3>
+<p>Control de procesos, reportes e indicadores.</p>
+</div>
+
+<div class="card">
+<h3>Seguimiento de Pacientes</h3>
+<p>Recuperación de pacientes inactivos y confirmación de citas.</p>
+</div>
+
+<div class="card">
+<h3>Experiencia del Paciente</h3>
+<p>Encuestas de satisfacción y mejora continua.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section problemas">
+
+<div class="titulo">
+<h2>¿Le resulta familiar?</h2>
+</div>
+
+<ul>
+<li>❌ Pacientes que dejan de asistir y no regresan.</li>
+<li>❌ WhatsApp saturado durante el día.</li>
+<li>❌ Poco tiempo para tareas administrativas.</li>
+<li>❌ Falta de seguimiento a pacientes.</li>
+<li>❌ Procesos desorganizados.</li>
+</ul>
+
+</section>
+
+<section class="section planes" id="planes">
+
+<div class="titulo">
+<h2>Planes</h2>
+</div>
+
+<div class="cards">
+
+<div class="card plan">
+<h3>Plan Básico</h3>
+<div class="precio">₡50.000</div>
+<p>Hasta 40 pacientes</p>
+<p>6 horas diarias</p>
+</div>
+
+<div class="card plan plan-destacado">
+<h3>Plan Profesional</h3>
+<div class="precio">₡125.000</div>
+<p>41 a 70 pacientes</p>
+<p>6 horas diarias</p>
+</div>
+
+<div class="card plan">
+<h3>Plan Personalizado</h3>
+<div class="precio">A medida</div>
+<p>Adaptado a las necesidades de su consulta.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section sobre" id="sobre">
+
+<div class="titulo">
+<h2>Sobre mí</h2>
+</div>
+
+<p style="max-width:900px;margin:auto;text-align:center;">
+Soy Yóselin Ramírez, Administradora de Empresas con experiencia en gestión administrativa, seguimiento de pacientes, atención al cliente y optimización de procesos. Mi objetivo es ayudar a profesionales de la salud a enfocarse en sus pacientes mientras yo me encargo de la gestión administrativa.
+</p>
+
+</section>
+
+<section class="section contacto" id="contacto">
+
+<h2>¿Listo para optimizar su consulta?</h2>
+
+<p>
+Contácteme y conversemos sobre cómo puedo ayudarle.
+</p>
+
+<br>
+
+<a href="https://wa.me/50663559877" class="btn">
+Escribirme por WhatsApp
+</a>
+
+</section>
+
+<footer>
+© 2026 Yóselin Ramírez | Asistente Virtual Administrativa
+</footer>
+
+<a class="whatsapp" href="https://wa.me/50663559877">
+💬
+</a>
+
+</body>
+</html>
