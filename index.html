@@ -3,368 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Yóselin Ramírez | Asistente Virtual Administrativa</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-
-:root{
---azul:#0A66C2;
---negro:#111111;
---blanco:#FFFFFF;
---gris:#F5F7FA;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:white;
-color:var(--negro);
-line-height:1.6;
-}
-
-header{
-position:sticky;
-top:0;
-background:white;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
-z-index:1000;
-}
-
-.logo{
-font-size:1.3rem;
-font-weight:700;
-color:var(--azul);
-}
-
-.menu a{
-text-decoration:none;
-margin-left:25px;
-color:var(--negro);
-font-weight:500;
-}
-
-.hero{
-min-height:90vh;
-display:flex;
-align-items:center;
-padding:0 8%;
-background:linear-gradient(to right,#ffffff,#f5f9ff);
-}
-
-.hero-content{
-max-width:700px;
-}
-
-.hero h1{
-font-size:3rem;
-line-height:1.2;
-margin-bottom:20px;
-}
-
-.hero span{
-color:var(--azul);
-}
-
-.hero p{
-font-size:1.1rem;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 28px;
-background:var(--azul);
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:600;
-}
-
-.section{
-padding:80px 8%;
-}
-
-.titulo{
-text-align:center;
-margin-bottom:50px;
-}
-
-.titulo h2{
-font-size:2.2rem;
-color:var(--azul);
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-padding:30px;
-background:white;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.card h3{
-margin-bottom:15px;
-}
-
-.problemas{
-background:var(--gris);
-}
-
-.problemas ul{
-max-width:800px;
-margin:auto;
-font-size:1.1rem;
-}
-
-.problemas li{
-margin-bottom:15px;
-}
-
-.planes{
-background:white;
-}
-
-.plan{
-border:2px solid #eee;
-}
-
-.plan-destacado{
-border:3px solid var(--azul);
-}
-
-.precio{
-font-size:2rem;
-font-weight:700;
-color:var(--azul);
-margin:15px 0;
-}
-
-.sobre{
-background:var(--gris);
-}
-
-.contacto{
-background:var(--azul);
-color:white;
-text-align:center;
-}
-
-.contacto h2{
-margin-bottom:20px;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:25px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-width:65px;
-height:65px;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:30px;
-text-decoration:none;
-color:white;
-}
-
+:root{--azul:#0A66C2;--negro:#111;--blanco:#fff;--gris:#f5f7fa;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{color:var(--negro);line-height:1.6}
+header{position:sticky;top:0;background:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.08);z-index:1000}
+.logo{font-weight:700;color:var(--azul)}
+nav a{text-decoration:none;color:#111;margin-left:20px}
+.hero{min-height:90vh;background:linear-gradient(135deg,#fff,#eef5ff);display:flex;align-items:center;padding:0 8%;gap:50px}
+.hero-text{flex:1}
+.hero h1{font-size:3rem;line-height:1.15;margin-bottom:20px}
+.hero h1 span{color:var(--azul)}
+.hero p{margin-bottom:25px;font-size:1.1rem}
+.hero-photo{width:280px;height:280px;border-radius:50%;background:var(--azul);display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;text-align:center;padding:20px}
+.btn{display:inline-block;background:var(--azul);color:#fff;padding:14px 24px;border-radius:10px;text-decoration:none;font-weight:600}
+.section{padding:80px 8%}
+.section h2{text-align:center;color:var(--azul);margin-bottom:35px;font-size:2.2rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 18px rgba(0,0,0,.08)}
+.gray{background:var(--gris)}
+.plan-pro{border:3px solid var(--azul)}
+.price{font-size:2rem;color:var(--azul);font-weight:700}
+.center{text-align:center}
+footer{background:#111;color:#fff;text-align:center;padding:25px}
+.contact{background:var(--azul);color:white;text-align:center}
+.contact h2{color:white}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:white;width:65px;height:65px;border-radius:50%;display:flex;justify-content:center;align-items:center;text-decoration:none;font-size:30px}
+ul{padding-left:20px}
 @media(max-width:768px){
-
-.menu{
-display:none;
+.hero{flex-direction:column;padding-top:50px}
+.hero h1{font-size:2rem}
+nav{display:none}
 }
-
-.hero h1{
-font-size:2rem;
-}
-
-}
-
 </style>
 </head>
-
 <body>
-
 <header>
-
-<div class="logo">
-Yóselin Ramírez
-</div>
-
-<nav class="menu">
+<div class="logo">Yóselin Ramírez | Asistente Virtual Administrativa</div>
+<nav>
 <a href="#servicios">Servicios</a>
 <a href="#planes">Planes</a>
-<a href="#sobre">Sobre mí</a>
+<a href="#faq">Preguntas</a>
 <a href="#contacto">Contacto</a>
 </nav>
-
 </header>
 
 <section class="hero">
-
-<div class="hero-content">
-
-<h1>
-Recupere tiempo para sus pacientes.
-<span>Yo me encargo de la gestión administrativa.</span>
-</h1>
-
-<p>
-Asistencia virtual administrativa especializada para profesionales de la salud. Optimice sus procesos, mejore el seguimiento de pacientes y reduzca su carga operativa.
-</p>
-
-<a href="https://wa.me/50663559877" class="btn">
-Solicitar información
-</a>
-
+<div class="hero-text">
+<h1>Menos tiempo en <span>tareas administrativas</span>. Más tiempo para sus pacientes.</h1>
+<p>Asistencia virtual especializada para profesionales de la salud. Le ayudo a optimizar procesos, dar seguimiento a pacientes y brindar una experiencia más profesional.</p>
+<a class="btn" href="https://wa.me/50663559877">Solicitar información</a>
 </div>
-
+<div class="hero-photo">Tu foto aquí</div>
 </section>
 
 <section class="section" id="servicios">
-
-<div class="titulo">
 <h2>Servicios</h2>
-</div>
-
 <div class="cards">
-
-<div class="card">
-<h3>Gestión de Comunicación</h3>
-<p>Atención de mensajes, consultas administrativas y seguimiento.</p>
+<div class="card"><h3>Atención de WhatsApp</h3><p>Gestión profesional de consultas administrativas.</p></div>
+<div class="card"><h3>Seguimiento de pacientes</h3><p>Control y acompañamiento para mejorar la retención.</p></div>
+<div class="card"><h3>Confirmación de citas</h3><p>Reducción de ausencias y cancelaciones.</p></div>
+<div class="card"><h3>Facturación y apoyo administrativo</h3><p>Organización y control de procesos.</p></div>
+<div class="card"><h3>Tratamiento de datos</h3><p>Registro y gestión de información relevante.</p></div>
+<div class="card"><h3>Encuestas de satisfacción</h3><p>Mejora continua de la experiencia del paciente.</p></div>
 </div>
-
-<div class="card">
-<h3>Organización Administrativa</h3>
-<p>Control de procesos, reportes e indicadores.</p>
-</div>
-
-<div class="card">
-<h3>Seguimiento de Pacientes</h3>
-<p>Recuperación de pacientes inactivos y confirmación de citas.</p>
-</div>
-
-<div class="card">
-<h3>Experiencia del Paciente</h3>
-<p>Encuestas de satisfacción y mejora continua.</p>
-</div>
-
-</div>
-
 </section>
 
-<section class="section problemas">
-
-<div class="titulo">
-<h2>¿Le resulta familiar?</h2>
+<section class="section gray">
+<h2>¿Qué problemas soluciono?</h2>
+<div class="cards">
+<div class="card">Pacientes que dejan de asistir y no regresan.</div>
+<div class="card">WhatsApp saturado durante el día.</div>
+<div class="card">Falta de seguimiento especializado.</div>
+<div class="card">Procesos administrativos desorganizados.</div>
 </div>
-
-<ul>
-<li>❌ Pacientes que dejan de asistir y no regresan.</li>
-<li>❌ WhatsApp saturado durante el día.</li>
-<li>❌ Poco tiempo para tareas administrativas.</li>
-<li>❌ Falta de seguimiento a pacientes.</li>
-<li>❌ Procesos desorganizados.</li>
-</ul>
-
 </section>
 
-<section class="section planes" id="planes">
-
-<div class="titulo">
+<section class="section" id="planes">
 <h2>Planes</h2>
-</div>
-
 <div class="cards">
-
-<div class="card plan">
+<div class="card">
 <h3>Plan Básico</h3>
-<div class="precio">₡50.000</div>
+<div class="price">₡50.000</div>
 <p>Hasta 40 pacientes</p>
-<p>6 horas diarias</p>
+<p>6 horas por día</p>
 </div>
-
-<div class="card plan plan-destacado">
+<div class="card plan-pro">
 <h3>Plan Profesional</h3>
-<div class="precio">₡125.000</div>
+<div class="price">₡125.000</div>
 <p>41 a 70 pacientes</p>
-<p>6 horas diarias</p>
+<p>6 horas por día</p>
 </div>
-
-<div class="card plan">
+<div class="card">
 <h3>Plan Personalizado</h3>
-<div class="precio">A medida</div>
-<p>Adaptado a las necesidades de su consulta.</p>
+<div class="price">A medida</div>
+<p>Escríbame para coordinar una propuesta adaptada a sus necesidades.</p>
 </div>
-
 </div>
-
 </section>
 
-<section class="section sobre" id="sobre">
-
-<div class="titulo">
-<h2>Sobre mí</h2>
+<section class="section gray">
+<h2>¿Por qué trabajar conmigo?</h2>
+<div class="cards">
+<div class="card">Especialización en profesionales de la salud.</div>
+<div class="card">Atención personalizada.</div>
+<div class="card">Seguimiento de pacientes.</div>
+<div class="card">Organización administrativa eficiente.</div>
 </div>
-
-<p style="max-width:900px;margin:auto;text-align:center;">
-Soy Yóselin Ramírez, Administradora de Empresas con experiencia en gestión administrativa, seguimiento de pacientes, atención al cliente y optimización de procesos. Mi objetivo es ayudar a profesionales de la salud a enfocarse en sus pacientes mientras yo me encargo de la gestión administrativa.
-</p>
-
 </section>
 
-<section class="section contacto" id="contacto">
-
-<h2>¿Listo para optimizar su consulta?</h2>
-
-<p>
-Contácteme y conversemos sobre cómo puedo ayudarle.
-</p>
-
-<br>
-
-<a href="https://wa.me/50663559877" class="btn">
-Escribirme por WhatsApp
-</a>
-
+<section class="section" id="faq">
+<h2>Preguntas frecuentes</h2>
+<div class="card">
+<p><strong>¿Trabaja de forma remota?</strong><br>Sí, todos los servicios se brindan de manera virtual.</p><br>
+<p><strong>¿Puedo solicitar un plan diferente?</strong><br>Sí, existe un plan personalizado según sus necesidades.</p><br>
+<p><strong>¿Cuál es el horario de atención?</strong><br>Lunes a sábado de 8:00 a.m. a 8:00 p.m.</p>
+</div>
 </section>
 
-<footer>
-© 2026 Yóselin Ramírez | Asistente Virtual Administrativa
-</footer>
+<section class="section center">
+<h2>Testimonios</h2>
+<p>Próximamente compartiré experiencias y resultados obtenidos junto a mis clientes.</p>
+</section>
 
-<a class="whatsapp" href="https://wa.me/50663559877">
-💬
-</a>
+<section class="section contact" id="contacto">
+<h2>Contácteme</h2>
+<p>WhatsApp: +506 6355-9877</p>
+<p>Correo: yosramirez.alvarado@gmail.com</p>
+<p>Instagram: @yos_asistente_virtual</p><br>
+<a class="btn" href="https://wa.me/50663559877">Enviar mensaje</a>
+</section>
 
+<footer>© 2026 Yóselin Ramírez | Asistente Virtual Administrativa</footer>
+<a class="whatsapp" href="https://wa.me/50663559877">💬</a>
 </body>
 </html>
