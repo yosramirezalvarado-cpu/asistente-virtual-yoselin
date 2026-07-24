@@ -31,7 +31,22 @@ width:100%;
 height:100%;
 object-fit:cover;
 }
-.btn{display:inline-block;background:var(--azul);color:#fff;padding:14px 24px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn{
+display:inline-block;
+background:var(--azul);
+color:#fff;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+opacity:.9;
+}
+    
 .section{padding:80px 8%}
 .section h2{text-align:center;color:var(--azul);margin-bottom:35px;font-size:2.2rem}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
@@ -40,6 +55,12 @@ object-fit:cover;
 .plan-pro{border:3px solid var(--azul)}
 .price{font-size:2rem;color:var(--azul);font-weight:700}
 .center{text-align:center}
+.center-text{
+max-width:800px;
+margin:0 auto 40px;
+text-align:center;
+color:#555;
+}
 footer{background:#111;color:#fff;text-align:center;padding:25px}
 .contact{background:var(--azul);color:white;text-align:center}
 .contact h2{color:white}
@@ -65,15 +86,67 @@ nav{display:none}
 
 <section class="hero">
 <div class="hero-text">
-<h1>Menos tiempo en <span>tareas administrativas</span>. Más tiempo para sus pacientes.</h1>
-<p>Asistencia virtual especializada para profesionales de la salud. Le ayudo a optimizar procesos, dar seguimiento a pacientes y brindar una experiencia más profesional.</p>
-<a class="btn" href="https://wa.me/50663559877">Solicitar información</a>
+<h1>Optimice la gestión de su consulta y dedique más tiempo a sus pacientes.</h1>
+<p>Brindo asistencia virtual administrativa especializada para profesionales de la salud, apoyando en seguimiento de pacientes, organización de procesos y gestión eficiente de su consulta.</p>
+<a class="btn" href="https://wa.me/50663559877">Quiero optimizar mi consulta</a>
+
+<div class="trust">
+<p>✓ Atención personalizada</p>
+<p>✓ Servicio remoto</p>
+<p>✓ Horario flexible L-S 8:00 a.m. a 8:00 p.m.</p>
+</div>
+    
 </div>
 <div class="hero-photo">
     <img src="Yoselin.jpg" alt="Yóselin Ramírez - Asistente Virtual Administrativa">
 </div>
 </section>
 
+<section class="section">
+
+<h2>Más que asistencia administrativa: una aliada para el crecimiento de su consulta</h2>
+
+<p class="center-text">
+Le ayudo a organizar procesos, mejorar la experiencia del paciente y recuperar oportunidades de atención mientras usted se enfoca en brindar un servicio de calidad.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>⏳ Ahorre tiempo</h3>
+<p>
+Delegue tareas administrativas y enfóquese en la atención de sus pacientes.
+</p>
+</div>
+
+
+<div class="card">
+<h3>📈 Evite perder pacientes</h3>
+<p>
+El seguimiento oportuno permite mantener el contacto con pacientes interesados e inactivos.
+</p>
+</div>
+
+
+<div class="card">
+<h3>📋 Mayor organización</h3>
+<p>
+Mantenga información, procesos y comunicación administrativa más ordenados.
+</p>
+</div>
+
+
+<div class="card">
+<h3>💬 Mejor experiencia del paciente</h3>
+<p>
+Una comunicación organizada genera mayor confianza y profesionalismo.
+</p>
+</div>
+
+</div>
+
+</section>
+    
 <section class="section" id="servicios">
 <h2>Servicios</h2>
 <div class="cards">
