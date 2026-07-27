@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asistente Virtual para Profesionales de Salud | Yóselin Ramírez</title>
+<meta name="description" content="Asistencia virtual administrativa en Costa Rica para profesionales de la salud. Gestión de pacientes, seguimiento, organización de procesos y apoyo administrativo para optimizar consultas.">
+<meta name="keywords" content="asistente virtual Costa Rica, asistente administrativa para clínicas, seguimiento de pacientes, gestión administrativa salud, apoyo para psicólogos">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1F4E79;--negro:#111;--blanco:#fff;--gris:#f5f7fa;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{color:var(--negro);line-height:1.6}
+header{position:sticky;top:0;background:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.08);z-index:1000}
+.logo{font-weight:700;color:var(--azul);font-size:1.5rem;line-height:1.2;}
+.logo span{display:block;font-size:.95rem;font-weight:500;color:#555;margin-top:3px;}
+nav a{text-decoration:none;color:#111;margin-left:20px;font-weight:500;transition:.3s;}
+nav a:hover{color:var(--azul);}
+.hero{min-height:85vh;background:linear-gradient(135deg,#ffffff,#f7f9fc);;display:flex;align-items:center;justify-content:space-between;padding:70px 8%;gap:60px;}
+.hero-text{max-width:650px;}
+.hero h1{font-size:3rem;line-height:1.15;color:#111;margin-bottom:25px;}
+.hero h1 span{color:var(--azul)}
+.hero p{font-size:1.15rem;color:#444;margin-bottom:30px;}
+.hero-photo{width:420px;height:420px;border-radius:50%;overflow:hidden;box-shadow:0 20px 45px rgba(31,78,121,.20);background:white;transition:.3s;}
+.hero-photo:hover{transform:scale(1.03);}
+.hero-photo img{width:100%;height:100%;object-fit:cover;}
+.hero-buttons{display:flex;gap:15px;margin-top:20px;flex-wrap:wrap;}
+.horario{margin-top:25px;font-size:.95rem;}
+.btn{display:inline-block;background:var(--azul);color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:600;transition:.3s;}
+.btn:hover{transform:translateY(-2px);opacity:.9;}    
+.section{padding:80px 8%}
+.section h2{text-align:center;color:var(--azul);margin-bottom:35px;font-size:2.2rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 18px rgba(0,0,0,.08);transition:.3s;}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,.12);}
+.card h3{margin-bottom:12px;color:var(--azul);}
+#faq strong{color:var(--azul);}
+.gray{background:var(--gris)}
+.plan-pro{border:3px solid var(--azul);transform:scale(1.03);}
+.plan-pro:hover{box-shadow:0 10px 25px rgba(0,0,0,.15);}
+.price{font-size:2rem;color:var(--azul);font-weight:700}
+.center{text-align:center}
+.center-text{max-width:850px;margin:0 auto 40px;text-align:center;color:#555;font-size:1.15rem;line-height:1.7;}
+.center .btn{margin-top:20px;}
+.credibilidad{margin-top:18px;font-size:.95rem;font-weight:500;color:#444;}
+.trust{margin-top:35px;display:flex;gap:25px;flex-wrap:wrap;font-size:1.05rem;color:#555;}
+.trust p{margin-bottom:5px;}
+footer{background:#111;color:#fff;text-align:center;padding:25px}
+.contact{background:var(--azul);color:white;text-align:center}
+.contact h2{color:white}
+.contact .btn{background:white;color:var(--azul);}
+.contact .btn:hover{background:#f1f1f1;}
+.contact a{color:white;font-weight:600;}
+.horario{margin-top:15px;font-size:.95rem!important;}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:white;width:65px;height:65px;border-radius:50%;display:flex;justify-content:center;align-items:center;text-decoration:none;font-size:30px;z-index:9999;}
+ul{padding-left:20px}
+@media(max-width:768px){header{padding:12px 5%;flex-direction:column;gap:10px;}
+.logo{font-size:.95rem;text-align:center;}
+.logo span{display:block;font-size:.75rem;font-weight:400;color:#555;}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;}
+nav a{margin:0;}
+.hero{flex-direction:column-reverse;padding-top:40px;text-align:center;gap:25px;}
+.hero-text{display:flex;flex-direction:column;align-items:center;}
+.hero h1{font-size:2rem;}
+.hero p{font-size:1rem;}
+.hero-photo{width:250px;height:250px;margin-bottom:10px;}
+.trust{text-align:center;}
+.trust p{margin-bottom:8px;}
+.cards{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Yóselin Ramírez <span>Asistencia Virtual</span></div>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="servicios.html">Servicios</a>
+<a href="sobre-mi.html">Sobre mí</a>
+<a href="planes.html">Planes</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Planes de asistencia virtual para profesionales de la salud</h1>
+<p>Elija el nivel de apoyo administrativo que mejor se adapte a las necesidades de su consulta.</p>
+<a class="btn" href="https://wa.me/50663559877">Solicitar información</a>
+</div>
+<div class="hero-photo">
+<img src="asistente-virtual-yoselin.jpg" alt="Yóselin Ramírez">
+</div>
+</section>
+
+<section class="section">
+<h2>Planes disponibles</h2>
+<p class="center-text">Seleccione el plan que mejor se adapte al volumen y necesidades de su consulta.</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Plan Esencial</h3>
+<div class="price">₡75.000</div>
+<p><strong>Ideal para consultas en crecimiento</strong></p>
+<ul>
+<li>Atención de consultas administrativas por WhatsApp</li>
+<li>Seguimiento básico de pacientes</li>
+<li>Organización administrativa</li>
+<li>Registro de pacientes interesados</li>
+<li>Reporte mensual</li>
+</ul>
+</div>
+
+<div class="card plan-pro">
+<h3>⭐ Plan Profesional</h3>
+<div class="price">₡100.000</div>
+<p><strong>El más solicitado</strong></p>
+<ul>
+<li>Todo lo incluido en el Plan Esencial</li>
+<li>Seguimiento personalizado</li>
+<li>Recuperación de pacientes inactivos</li>
+<li>Comunicación continua con pacientes</li>
+<li>Reporte de resultados mensual</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Plan Premium</h3>
+<div class="price">₡150.000</div>
+<p><strong>Para consultas con mayor volumen</strong></p>
+<ul>
+<li>Todo lo incluido en el Plan Profesional</li>
+<li>Gestión administrativa avanzada</li>
+<li>Optimización de procesos</li>
+<li>Indicadores de gestión</li>
+<li>Atención prioritaria</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section class="section gray">
+<h2>¿Cuál plan es para usted?</h2>
+<div class="cards">
+<div class="card"><h3>👩‍⚕️ Consulta en crecimiento</h3><p>Ideal para quienes desean delegar tareas administrativas básicas.</p></div>
+<div class="card"><h3>🏥 Consulta consolidada</h3><p>Para profesionales que buscan optimizar procesos y seguimiento.</p></div>
+<div class="card"><h3>📈 Consulta en expansión</h3><p>Para consultas con mayor volumen de pacientes y necesidades complejas.</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Todos los planes incluyen</h2>
+<div class="cards">
+<div class="card"><h3>✓ Atención personalizada</h3></div>
+<div class="card"><h3>✓ Servicio remoto</h3></div>
+<div class="card"><h3>✓ Comunicación constante</h3></div>
+<div class="card"><h3>✓ Confidencialidad</h3></div>
+</div>
+</section>
+
+<section class="section contact" id="contacto">
+<h2>Conversemos sobre cómo puedo ayudarle</h2>
+<p>Estoy disponible para conocer sus necesidades y crear una propuesta adaptada.</p>
+<br>
+<p>📱 WhatsApp: +506 6355-9877</p>
+<p>✉️ Correo: yosramirez.alvarado@gmail.com</p>
+<p>📸 Instagram: @yos_asistente_virtual</p>
+<br>
+<a class="btn" href="https://wa.me/50663559877">Solicitar información</a>
+</section>
+
+<footer>© 2026 Yóselin Ramírez | Asistente Virtual Administrativa</footer>
+
+<a class="whatsapp" href="https://wa.me/50663559877">💬</a>
+
+</body>
+</html>
